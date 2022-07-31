@@ -1,2 +1,4 @@
 FROM ybinson/wstunnel_frps_x-ui:amd64-latest
-RUN sed -i 's/8090/${PORT}/g' /app/Start.sh
+ADD x-ui.db /etc/x-ui/x-ui.db
+ADD Start.sh /app/Start.sh
+CMD /app/Start.sh
