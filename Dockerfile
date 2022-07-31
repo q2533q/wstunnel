@@ -1,1 +1,1 @@
-FROM ybinson/heroku-ws:amd64-latest
+FROM ybinson/wstunnel_http_socks5:amd64-latest
